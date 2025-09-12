@@ -333,7 +333,7 @@ Sets the URL of the webview.
 ### addListener('urlChangeEvent', ...)
 
 ```typescript
-addListener(eventName: 'urlChangeEvent', listenerFunc: UrlChangeListener) => Promise<PluginListenerHandle>
+addListener(eventName: "urlChangeEvent", listenerFunc: UrlChangeListener) => Promise<PluginListenerHandle>
 ```
 
 Listen for url change, only for openWebView
@@ -353,7 +353,7 @@ Listen for url change, only for openWebView
 ### addListener('buttonNearDoneClick', ...)
 
 ```typescript
-addListener(eventName: 'buttonNearDoneClick', listenerFunc: ButtonNearListener) => Promise<PluginListenerHandle>
+addListener(eventName: "buttonNearDoneClick", listenerFunc: ButtonNearListener) => Promise<PluginListenerHandle>
 ```
 
 | Param              | Type                                                              |
@@ -369,7 +369,7 @@ addListener(eventName: 'buttonNearDoneClick', listenerFunc: ButtonNearListener) 
 ### addListener('closeEvent', ...)
 
 ```typescript
-addListener(eventName: 'closeEvent', listenerFunc: UrlChangeListener) => Promise<PluginListenerHandle>
+addListener(eventName: "closeEvent", listenerFunc: UrlChangeListener) => Promise<PluginListenerHandle>
 ```
 
 Listen for close click only for openWebView
@@ -389,7 +389,7 @@ Listen for close click only for openWebView
 ### addListener('confirmBtnClicked', ...)
 
 ```typescript
-addListener(eventName: 'confirmBtnClicked', listenerFunc: ConfirmBtnListener) => Promise<PluginListenerHandle>
+addListener(eventName: "confirmBtnClicked", listenerFunc: ConfirmBtnListener) => Promise<PluginListenerHandle>
 ```
 
 Will be triggered when user clicks on confirm button when disclaimer is required
@@ -409,7 +409,7 @@ Will be triggered when user clicks on confirm button when disclaimer is required
 ### addListener('messageFromWebview', ...)
 
 ```typescript
-addListener(eventName: 'messageFromWebview', listenerFunc: (event: { detail: Record<string, any>; }) => void) => Promise<PluginListenerHandle>
+addListener(eventName: "messageFromWebview", listenerFunc: (event: { detail: Record<string, any>; }) => void) => Promise<PluginListenerHandle>
 ```
 
 Will be triggered when event is sent from webview(inappbrowser), to send an event to the main app use window.mobileApp.postMessage({ "detail": { "message": "myMessage" } })
@@ -431,7 +431,7 @@ This method is inject at runtime in the webview
 ### addListener('browserPageLoaded', ...)
 
 ```typescript
-addListener(eventName: 'browserPageLoaded', listenerFunc: () => void) => Promise<PluginListenerHandle>
+addListener(eventName: "browserPageLoaded", listenerFunc: () => void) => Promise<PluginListenerHandle>
 ```
 
 Will be triggered when page is loaded
@@ -449,7 +449,7 @@ Will be triggered when page is loaded
 ### addListener('pageLoadError', ...)
 
 ```typescript
-addListener(eventName: 'pageLoadError', listenerFunc: () => void) => Promise<PluginListenerHandle>
+addListener(eventName: "pageLoadError", listenerFunc: () => void) => Promise<PluginListenerHandle>
 ```
 
 Will be triggered when page load error
@@ -674,18 +674,18 @@ Construct a type with a set of properties K of type T
 
 | Members          | Value                     | Description                                                      | Since |
 | ---------------- | ------------------------- | ---------------------------------------------------------------- | ----- |
-| **`ACTIVITY`**   | <code>'activity'</code>   | Shows a simple toolbar with just a close button and share button | 0.1.0 |
-| **`COMPACT`**    | <code>'compact'</code>    | Shows a simple toolbar with just a close button                  | 7.6.8 |
-| **`NAVIGATION`** | <code>'navigation'</code> | Shows a full navigation toolbar with back/forward buttons        | 0.1.0 |
-| **`BLANK`**      | <code>'blank'</code>      | Shows no toolbar                                                 | 0.1.0 |
+| **`ACTIVITY`**   | <code>"activity"</code>   | Shows a simple toolbar with just a close button and share button | 0.1.0 |
+| **`COMPACT`**    | <code>"compact"</code>    | Shows a simple toolbar with just a close button                  | 7.6.8 |
+| **`NAVIGATION`** | <code>"navigation"</code> | Shows a full navigation toolbar with back/forward buttons        | 0.1.0 |
+| **`BLANK`**      | <code>"blank"</code>      | Shows no toolbar                                                 | 0.1.0 |
 
 
 #### BackgroundColor
 
 | Members     | Value                |
 | ----------- | -------------------- |
-| **`WHITE`** | <code>'white'</code> |
-| **`BLACK`** | <code>'black'</code> |
+| **`WHITE`** | <code>"white"</code> |
+| **`BLACK`** | <code>"black"</code> |
 
 </docgen-api>
 
