@@ -7,10 +7,9 @@
   "types": "dist/esm/index.d.ts",
   "unpkg": "dist/plugin.js",
   "files": [
-    "android/src/main/",
-    "android/build.gradle",
-    "dist/",
-    "ios/Plugin/",
+    "android/**",
+    "dist/**",
+    "ios/**",
     "Package.swift",
     "CapgoInappbrowser.podspec"
   ],
